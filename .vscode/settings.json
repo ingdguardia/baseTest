@@ -1,0 +1,90 @@
+{
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+  "java.format.maxLineLength": 120,
+  //*********** cSpell Settings *************
+  // Version of the setting file.  Always 0.2
+  "cSpell.version": "0.2",
+  // language - current active spelling language
+  "cSpell.language": "en",
+  // words - list of words to be always considered correct
+  "cSpell.words": [
+    "'fieldmsg-container'",
+    "'outputmsg",
+    "'required_field_bottom'",
+    "'s2id_autogen3_search'",
+    "'sys_user_grmember'",
+    "'tinymce'",
+    "amspi",
+    "autogen",
+    "autopopulated",
+    "aventstack",
+    "body",
+    "button",
+    "casetitle",
+    "chromedriver",
+    "closemodal",
+    "comanager",
+    "combobox",
+    "dummyfooter",
+    "EID",
+    "enterpriseid",
+    "extentreports",
+    "fieldset",
+    "formfield",
+    "ganesan",
+    "geetha",
+    "id",
+    "input",
+    "inputdatafile",
+    "inputdatasheet",
+    "inputdatasheetname",
+    "kanban",
+    "label",
+    "listbox",
+    "macroponent",
+    "NASP",
+    "navigatable",
+    "oper",
+    "outputmsg_error'",
+    "sbox",
+    "sncwsgs",
+    "span",
+    "sublabel",
+    "sysverb",
+    "techlogs",
+    "Testdata",
+    "textblock",
+    "textbox",
+    "thead",
+    "typeahead",
+    "unimpersonate",
+    "wdriver",
+    "XSSF"
+  ],
+  /* flagWords - list of words to be always considered incorrect This is useful for offensive words and common spelling errors.
+     For example "hte" should be "the"*/
+  "flagWords": [
+    "hte",
+    "aer"
+  ],
+  "ignorePaths": [
+    "cspell.json", // Ignore cspell.json file.
+    ".vscode", // Ignore the .vscode directory.
+    ".git", // Ignore the .git directory.
+    "*.dll", // Ignore all .dll files.
+    "**/*.dll" // Ignore all .dll files.
+  ],
+  "cSpell:ignoreRegExp": "Email",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.defaultFormatter": "redhat.java",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

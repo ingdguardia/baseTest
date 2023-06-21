@@ -1,0 +1,85 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Suite name must be named with the name of the Project -->
+<!-- Multi thread -> number of test cases executed at same time -->
+<!-- @BeforeSuite Execution -->
+<suite name="ProjectName" verbose="2" parallel="tests" thread-count="4">
+
+	<parameter name="inputdatafile" value="Input_ProjectName.xlsx" />
+	<!-- This value must be	replaced with same name in xlsx file-->
+
+	<!-- @BeforeTest Execution (Report Creation)-->
+	<test name="TEST CASE NAME" preserve-order="true" enabled="true">
+		<parameter name="testcaseName" value="testcase_TEST" />
+
+		<classes>
+			<class name="com.serviceNow.testcases.ProjectName">
+				<methods>
+					<!-- @BeforeMethod Execution (Logger Creation) -->
+					<include name="scriptMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- @BeforeTest Execution -->
+	<test name="TEST CASE NAME 2" preserve-order="true" enabled="false">
+		<parameter name="testcaseName" value="testcase_TEST2" />
+		<classes>
+			<class name="com.serviceNow.testcases.ProjectName">
+				<methods>
+					<!-- @BeforeMethod Execution -->
+					<include name="scriptMethod2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- @BeforeTest Execution -->
+	<test name="TEST CASE NAME 3" preserve-order="true" enabled="false">
+		<parameter name="testcaseName" value="testcase_TEST" />
+		<classes>
+			<class name="com.serviceNow.testcases.ProjectName">
+				<methods>
+					<include name="scriptMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- @BeforeTest Execution -->
+	<test name="TEST CASE NAME 4" preserve-order="true" enabled="false">
+		<parameter name="testcaseName" value="testcase_TEST4" />
+		<classes>
+			<class name="com.serviceNow.testcases.ProjectName">
+				<methods>
+					<include name="scriptMethod4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- EXAMPLE OF WRITE A TEST
+	CASE IN TESTNG-->
+	<!--
+		name 'TEST CASE NAME' = Description of the test case (must be shortly possible)
+		enabled
+	-> if is true, this test will be executed, else is false will NOT be executed
+		
+		parameter:
+	name 'testcaseName' value 'TEST CASE VALUE' = This value must be exactly the same in Input Data
+	file.xlsx
+		
+		class name="com.serviceNow.testcases.ProjectName" -> This class name must be
+	replaced with name of the Project.
+		This name must be the same on .java file name, where we
+	dev our script codes. (e.i. ProjectName)
+
+		methods:
+		Here we include our methods created on
+	.java file. 
+		We can also add new parameters and passed to the method as parameter with name
+	and values
+		For example <parameter name="userEID" value="emiliano.molina" /> 
+	-->
+</suite> 

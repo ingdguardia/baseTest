@@ -1,0 +1,19 @@
+# Compiled class file
+*.class
+.classpath
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Folders
+test-output
+target
+Reports/*
+Resources/*
+Screenshots/*
+.Settings
+#.vscode
+
